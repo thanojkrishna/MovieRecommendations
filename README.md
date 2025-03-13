@@ -1,62 +1,75 @@
+# Movie Recommendation System
 
-README for CSC869 Term Project: Movie Recommendation System
+## 🎬 Project Overview
+This project focuses on developing a movie recommendation system that leverages data processing and machine learning techniques to provide users with personalized movie suggestions based on their preferences and viewing history.
 
-Project Overview:
-----------------
-This project is focused on developing a movie recommendation system. Utilizing various data processing and machine learning techniques, the system aims to provide users with movie recommendations based on their preferences and viewing history.
+## 📁 Repository Structure
 
-Programming Language and Environment
-- Language: Python
-- Environment: Jupyter Notebook
+### 📂 data/
+Contains datasets used for analysis and modeling.
+- `movies_metadata.csv`: Metadata of movies including titles, genres, and descriptions.
+- `ratings.csv`: User ratings for various movies.
 
-Dependencies and Installation:
------------------------------
-For developing and running this project, you can use one of the following Python IDEs (PyCharm,Visual Studio Code (VS Code),Jupyter Notebook etc..)
+### 📂 notebooks/
+Jupyter notebooks detailing data analysis, preprocessing, and model development.
+- `Movie_Recommendation_System.ipynb`: Main notebook encompassing data preprocessing, exploratory data analysis (EDA), and model implementation.
 
-To run this project, the following Python libraries are required. Install them using pip:
-pip install pandas
-pip install numpy
-pip install scikit-learn
-pip install matplotlib
-pip install seaborn
-pip install jupyter
-pip install swifter
-pip install nltk
-pip install wheel
-pip install scikit-surprise
+### 📂 scripts/
+Python scripts for data processing and model functions.
+- `data_preprocessing.py`: Script for cleaning and preparing the dataset.
+- `model_training.py`: Script for training and evaluating recommendation models.
 
+### 📂 reports/
+Documentation and reports generated from the analysis.
+- `Final_Report.pdf`: Detailed report summarizing methodologies, findings, and conclusions.
 
-Existing Software and Toolkits:
-------------------------------
-Pandas and NumPy: These are used to organize and handle the movie data. They help in sorting, filtering, and preparing the data for analysis, which is crucial in understanding user preferences and movie characteristics.
+### 📄 requirements.txt
+Lists the Python packages required to run the project.
 
-Scikit-learn: This library is used for converting movie descriptions into numerical form using TF-IDF Vectorization and then calculating similarities between movies with cosine similarity, aiding in the recommendation of similar movies to users.
+## 🔍 Exploratory Data Analysis (EDA)
+- **Movie Popularity**: Analysis of the most rated and highest-rated movies.
+- **User Behavior**: Insights into user rating patterns and preferences.
+- **Genre Trends**: Examination of popular genres over time.
 
-Matplotlib and Seaborn: These tools are used for creating charts and graphs. They help in visually representing the data, making it easier to understand patterns and insights about movie preferences and trends.
+## 🧠 Modeling Approach
+Implemented recommendation algorithms:
+1. **Content-Based Filtering**: Recommends movies similar to those a user has liked, based on movie features like genres and descriptions.
+2. **Collaborative Filtering**: Suggests movies based on user behavior and preferences, identifying patterns among users with similar tastes.
+3. **Hybrid Approach**: Combines both content-based and collaborative filtering to enhance recommendation accuracy.
 
-Jupyter Notebook: It's the platform where all the code is written and run. It's like a digital notebook that combines code, visualizations, and text in one place, making it easier to see the results of the code and make changes as needed.
+### Evaluation Metrics
+Models were evaluated using:
+- **Precision**: Proportion of recommended movies that are relevant.
+- **Recall**: Proportion of relevant movies that are recommended.
+- **F1-Score**: Harmonic mean of precision and recall.
 
-Swifter: This tool helps in making data processing faster. When working with large movie datasets, it speeds up the calculations, saving time and making the system more efficient.
+*Detailed performance metrics are available in the final report.*
 
-NLTK (Natural Language Toolkit): This is used for analyzing the text related to movies, like descriptions or reviews. It helps in breaking down and understanding the text, which is important for recommending movies based on their content.
+## 🚀 How to Use This Repository
 
-Surprise: Utilized for its SVD (Singular Value Decomposition) model, this toolkit helps to predict user ratings for movies, enabling the system to recommend films that align with individual user preferences.
+1. **Clone the Repository**:
+```bash
+git clone https://github.com/thanojkrishna/MovieRecommendations.git
+cd MovieRecommendations
+```
 
+2. **Set Up the Environment**:
+- Ensure you have Python installed (preferably version 3.7 or higher).
+- Install necessary packages:
+```bash
+pip install -r requirements.txt
+```
 
-Data Sources:
-------------
-The project uses publicly available movie datasets. Follow these steps to download and read the datasets:
-1. Download the dataset from https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset/data
-2. Place the downloaded files in a directory accessible to the Jupyter Notebook.
-3. Use the provided Python scripts in the notebook to read and process the datasets.
+3. **Explore the Data**:
+- Access the `notebooks/` directory to view and run Jupyter notebooks.
+- Open `Movie_Recommendation_System.ipynb` to follow the analysis and modeling steps.
 
-Running the Program:
--------------------
-1. Open the Jupyter Notebook in your development environment.
-2. Ensure all dependencies are installed.
-3. Run the cells in the notebook sequentially to execute the program.
-PS : don't forget to update working directory ( where the data files have been downloaded)
+## 📄 License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-Integration of Toolkits with Custom Code:
-----------------------------------------
-The project integrates external toolkits with custom Python code to achieve functionalities like data preprocessing, feature extraction, and model training for the recommendation system.
+## 🙏 Acknowledgements
+- Data sourced from [TMDB Dataset](https://www.kaggle.com/tmdb/tmdb-movie-metadata).
+- Special thanks to the course instructors for guidance and support.
+
+---
+Feel free to fork, star, or contribute to this repository if you find it useful!
