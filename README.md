@@ -64,8 +64,6 @@ pip install -r requirements.txt
 - Access the `notebooks/` directory to view and run Jupyter notebooks.
 - Open `Movie_Recommendation_System.ipynb` to follow the analysis and modeling steps.
 
-## 📄 License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgements
 - Data sourced from [TMDB Dataset](https://www.kaggle.com/tmdb/tmdb-movie-metadata).
